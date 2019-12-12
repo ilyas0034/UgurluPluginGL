@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DeploymentDescriptor xmlns="http://www.qad.com/DeploymentDescriptor.xsd" Provider="CSA" Key="qad.plugin.UgurluPluginGL.Plugin" Version="1.0.0" Enabled="true">
+  <Plugin>
+    <Assembly>UgurluPluginGL.Plugin.dll</Assembly>
+    <Type>UgurluPluginGL.Plugin.Plugin</Type>
+  </Plugin>
+</DeploymentDescriptor>

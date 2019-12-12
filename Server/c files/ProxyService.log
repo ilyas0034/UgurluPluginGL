@@ -1,0 +1,477 @@
+
+**  ProxyGen, Progress Version 11.7
+
+** Checking for existence of .r files ...
+
+** Processing non-persistent procedures ...
+
+** Processing: C:\Git\QAD\UgurluPluginGL\Server\r files\createbudget_a.r ...
+   -- Parsing r-code ...
+       MAIN /apl/ee2016_test/customizations/pro/com/qad/plugingl/createbudget_a.p 
+          INPUT dsSessionContext DATASET
+          INPUT dsCreateBudgetIn DATASET
+          OUTPUT dsMessage DATASET
+          OUTPUT dsCreateBudgetOut DATASET
+       DATASET: dsCreateBudgetOut
+          BUFFERS: ttCstMessages, ttCreateBudgetOut
+       DATASET: dsCreateBudgetIn
+          BUFFERS: ttUserInfoTr, ttCreateBudgetIn
+       DATASET: dsMessage
+          BUFFERS: ttMessageQueue, ttMessage, ttAttachment
+       DATASET: dsSessionContext
+          BUFFERS: ttContext
+       TABLE: ttContext
+          propertyQualifier CHARACTER
+          propertyName CHARACTER
+          propertyValue CHARACTER
+       TABLE: ttMessageQueue
+          queueOid DECIMAL
+          queueName CHARACTER
+          queueOwner CHARACTER
+          queueLabel CHARACTER
+          queueDesc CHARACTER
+          userQueue LOGICAL
+          deleteQueue LOGICAL
+       TABLE: ttMessage
+          queueName CHARACTER
+          queueOwner CHARACTER
+          msgGuid CHARACTER
+          msgParentGuid CHARACTER
+          msgFrom CHARACTER
+          msgTo CHARACTER
+          msgCc CHARACTER
+          msgBcc CHARACTER
+          msgSubject CHARACTER
+          msgDateCreated DATETIME-TZ
+          msgContent BLOB
+          msgContentType CHARACTER
+          msgFlags CHARACTER
+       TABLE: ttAttachment
+          msgGuid CHARACTER
+          url CHARACTER
+          filename CHARACTER
+          size INTEGER
+          mimetype CHARACTER
+       TABLE: ttCreateBudgetIn
+          ID CHARACTER
+          Period INTEGER
+          GLCode CHARACTER
+          Amount DECIMAL
+          CompanyCode CHARACTER
+          Year INTEGER
+       TABLE: ttUserInfoTr
+          ttUser CHARACTER
+          ttUserLang CHARACTER
+       TABLE: ttCstMessages
+          ttType CHARACTER
+          ttMessageNumber CHARACTER
+          ttMessage CHARACTER
+       TABLE: ttCreateBudgetOut
+          ID CHARACTER
+          Period INTEGER
+          GLCode CHARACTER
+          Amount DECIMAL
+          CompanyCode CHARACTER
+          Year INTEGER
+   -- No customizations; Validation not necessary
+
+** Processing: C:\Git\QAD\UgurluPluginGL\Server\r files\getbudget_a.r ...
+   -- Parsing r-code ...
+       MAIN /apl/ee2016_test/customizations/pro/com/qad/plugingl/getbudget_a.p 
+          INPUT dsSessionContext DATASET
+          INPUT dsCreateBudgetIn DATASET
+          OUTPUT dsMessage DATASET
+          OUTPUT dsCreateBudgetOut DATASET
+       DATASET: dsCreateBudgetOut
+          BUFFERS: ttCstMessages, ttCreateBudgetOut
+       DATASET: dsCreateBudgetIn
+          BUFFERS: ttUserInfoTr, ttCreateBudgetIn
+       DATASET: dsMessage
+          BUFFERS: ttMessageQueue, ttMessage, ttAttachment
+       DATASET: dsSessionContext
+          BUFFERS: ttContext
+       TABLE: ttContext
+          propertyQualifier CHARACTER
+          propertyName CHARACTER
+          propertyValue CHARACTER
+       TABLE: ttMessageQueue
+          queueOid DECIMAL
+          queueName CHARACTER
+          queueOwner CHARACTER
+          queueLabel CHARACTER
+          queueDesc CHARACTER
+          userQueue LOGICAL
+          deleteQueue LOGICAL
+       TABLE: ttMessage
+          queueName CHARACTER
+          queueOwner CHARACTER
+          msgGuid CHARACTER
+          msgParentGuid CHARACTER
+          msgFrom CHARACTER
+          msgTo CHARACTER
+          msgCc CHARACTER
+          msgBcc CHARACTER
+          msgSubject CHARACTER
+          msgDateCreated DATETIME-TZ
+          msgContent BLOB
+          msgContentType CHARACTER
+          msgFlags CHARACTER
+       TABLE: ttAttachment
+          msgGuid CHARACTER
+          url CHARACTER
+          filename CHARACTER
+          size INTEGER
+          mimetype CHARACTER
+       TABLE: ttCreateBudgetIn
+          ID CHARACTER
+          Period INTEGER
+          GLCode CHARACTER
+          Amount DECIMAL
+          CompanyCode CHARACTER
+          Year INTEGER
+       TABLE: ttUserInfoTr
+          ttUser CHARACTER
+          ttUserLang CHARACTER
+       TABLE: ttCstMessages
+          ttType CHARACTER
+          ttMessageNumber CHARACTER
+          ttMessage CHARACTER
+       TABLE: ttCreateBudgetOut
+          ID CHARACTER
+          Period INTEGER
+          GLCode CHARACTER
+          Amount DECIMAL
+          CompanyCode CHARACTER
+          Year INTEGER
+   -- No customizations; Validation not necessary
+
+** Processing: C:\Git\QAD\UgurluPluginGL\Server\r files\getentity_a.r ...
+   -- Parsing r-code ...
+       MAIN /apl/ee2016_test/customizations/pro/com/qad/plugingl/getentity_a.p 
+          INPUT dsSessionContext DATASET
+          INPUT dsGetEntityIn DATASET
+          OUTPUT dsMessage DATASET
+          OUTPUT dsGetEntityOut DATASET
+       DATASET: dsGetEntityOut
+          BUFFERS: ttCstMessages, ttGetEntityOut
+       DATASET: dsGetEntityIn
+          BUFFERS: ttUserInfoTr, ttGetEntityIn
+       DATASET: dsMessage
+          BUFFERS: ttMessageQueue, ttMessage, ttAttachment
+       DATASET: dsSessionContext
+          BUFFERS: ttContext
+       TABLE: ttContext
+          propertyQualifier CHARACTER
+          propertyName CHARACTER
+          propertyValue CHARACTER
+       TABLE: ttMessageQueue
+          queueOid DECIMAL
+          queueName CHARACTER
+          queueOwner CHARACTER
+          queueLabel CHARACTER
+          queueDesc CHARACTER
+          userQueue LOGICAL
+          deleteQueue LOGICAL
+       TABLE: ttMessage
+          queueName CHARACTER
+          queueOwner CHARACTER
+          msgGuid CHARACTER
+          msgParentGuid CHARACTER
+          msgFrom CHARACTER
+          msgTo CHARACTER
+          msgCc CHARACTER
+          msgBcc CHARACTER
+          msgSubject CHARACTER
+          msgDateCreated DATETIME-TZ
+          msgContent BLOB
+          msgContentType CHARACTER
+          msgFlags CHARACTER
+       TABLE: ttAttachment
+          msgGuid CHARACTER
+          url CHARACTER
+          filename CHARACTER
+          size INTEGER
+          mimetype CHARACTER
+       TABLE: ttGetEntityIn
+          CompanyCode CHARACTER
+       TABLE: ttUserInfoTr
+          ttUser CHARACTER
+          ttUserLang CHARACTER
+       TABLE: ttCstMessages
+          ttType CHARACTER
+          ttMessageNumber CHARACTER
+          ttMessage CHARACTER
+       TABLE: ttGetEntityOut
+          CompanyCode CHARACTER
+          Company_ID INTEGER
+   -- No customizations; Validation not necessary
+
+** Processing: C:\Git\QAD\UgurluPluginGL\Server\r files\getglcode_a.r ...
+   -- Parsing r-code ...
+       MAIN /apl/ee2016_test/customizations/pro/com/qad/plugingl/getglcode_a.p 
+          INPUT dsSessionContext DATASET
+          INPUT dsGetGlCodeIn DATASET
+          OUTPUT dsMessage DATASET
+          OUTPUT dsGetGlCodeOut DATASET
+       DATASET: dsGetGlCodeOut
+          BUFFERS: ttCstMessages, ttGetGlCodeOut
+       DATASET: dsGetGlCodeIn
+          BUFFERS: ttUserInfoTr, ttGetGlCodeIn
+       DATASET: dsMessage
+          BUFFERS: ttMessageQueue, ttMessage, ttAttachment
+       DATASET: dsSessionContext
+          BUFFERS: ttContext
+       TABLE: ttContext
+          propertyQualifier CHARACTER
+          propertyName CHARACTER
+          propertyValue CHARACTER
+       TABLE: ttMessageQueue
+          queueOid DECIMAL
+          queueName CHARACTER
+          queueOwner CHARACTER
+          queueLabel CHARACTER
+          queueDesc CHARACTER
+          userQueue LOGICAL
+          deleteQueue LOGICAL
+       TABLE: ttMessage
+          queueName CHARACTER
+          queueOwner CHARACTER
+          msgGuid CHARACTER
+          msgParentGuid CHARACTER
+          msgFrom CHARACTER
+          msgTo CHARACTER
+          msgCc CHARACTER
+          msgBcc CHARACTER
+          msgSubject CHARACTER
+          msgDateCreated DATETIME-TZ
+          msgContent BLOB
+          msgContentType CHARACTER
+          msgFlags CHARACTER
+       TABLE: ttAttachment
+          msgGuid CHARACTER
+          url CHARACTER
+          filename CHARACTER
+          size INTEGER
+          mimetype CHARACTER
+       TABLE: ttGetGlCodeIn
+          GLCode CHARACTER
+       TABLE: ttUserInfoTr
+          ttUser CHARACTER
+          ttUserLang CHARACTER
+       TABLE: ttCstMessages
+          ttType CHARACTER
+          ttMessageNumber CHARACTER
+          ttMessage CHARACTER
+       TABLE: ttGetGlCodeOut
+          GL_ID INTEGER
+          GLCode CHARACTER
+   -- No customizations; Validation not necessary
+
+** Processing: C:\Git\QAD\UgurluPluginGL\Server\r files\getperiod_a.r ...
+   -- Parsing r-code ...
+       MAIN /apl/ee2016_test/customizations/pro/com/qad/plugingl/getperiod_a.p 
+          INPUT dsSessionContext DATASET
+          INPUT dsGetPeriodIn DATASET
+          OUTPUT dsMessage DATASET
+          OUTPUT dsGetPeriodOut DATASET
+       DATASET: dsGetPeriodOut
+          BUFFERS: ttCstMessages, ttGetPeriodOut
+       DATASET: dsGetPeriodIn
+          BUFFERS: ttUserInfoTr, ttGetPeriodIn
+       DATASET: dsMessage
+          BUFFERS: ttMessageQueue, ttMessage, ttAttachment
+       DATASET: dsSessionContext
+          BUFFERS: ttContext
+       TABLE: ttContext
+          propertyQualifier CHARACTER
+          propertyName CHARACTER
+          propertyValue CHARACTER
+       TABLE: ttMessageQueue
+          queueOid DECIMAL
+          queueName CHARACTER
+          queueOwner CHARACTER
+          queueLabel CHARACTER
+          queueDesc CHARACTER
+          userQueue LOGICAL
+          deleteQueue LOGICAL
+       TABLE: ttMessage
+          queueName CHARACTER
+          queueOwner CHARACTER
+          msgGuid CHARACTER
+          msgParentGuid CHARACTER
+          msgFrom CHARACTER
+          msgTo CHARACTER
+          msgCc CHARACTER
+          msgBcc CHARACTER
+          msgSubject CHARACTER
+          msgDateCreated DATETIME-TZ
+          msgContent BLOB
+          msgContentType CHARACTER
+          msgFlags CHARACTER
+       TABLE: ttAttachment
+          msgGuid CHARACTER
+          url CHARACTER
+          filename CHARACTER
+          size INTEGER
+          mimetype CHARACTER
+       TABLE: ttGetPeriodIn
+          Year INTEGER
+          Company_ID INTEGER
+       TABLE: ttUserInfoTr
+          ttUser CHARACTER
+          ttUserLang CHARACTER
+       TABLE: ttCstMessages
+          ttType CHARACTER
+          ttMessageNumber CHARACTER
+          ttMessage CHARACTER
+       TABLE: ttGetPeriodOut
+          Period INTEGER
+          Period_ID INTEGER
+          PeriodYear INTEGER
+   -- No customizations; Validation not necessary
+
+** Processing: C:\Git\QAD\UgurluPluginGL\Server\r files\getyear_a.r ...
+   -- Parsing r-code ...
+       MAIN /apl/ee2016_test/customizations/pro/com/qad/plugingl/getyear_a.p 
+          INPUT dsSessionContext DATASET
+          INPUT dsGetYearIn DATASET
+          OUTPUT dsMessage DATASET
+          OUTPUT dsGetYearOut DATASET
+       DATASET: dsGetYearOut
+          BUFFERS: ttCstMessages, ttGetYearOut
+       DATASET: dsGetYearIn
+          BUFFERS: ttUserInfoTr, ttGetYearIn
+       DATASET: dsMessage
+          BUFFERS: ttMessageQueue, ttMessage, ttAttachment
+       DATASET: dsSessionContext
+          BUFFERS: ttContext
+       TABLE: ttContext
+          propertyQualifier CHARACTER
+          propertyName CHARACTER
+          propertyValue CHARACTER
+       TABLE: ttMessageQueue
+          queueOid DECIMAL
+          queueName CHARACTER
+          queueOwner CHARACTER
+          queueLabel CHARACTER
+          queueDesc CHARACTER
+          userQueue LOGICAL
+          deleteQueue LOGICAL
+       TABLE: ttMessage
+          queueName CHARACTER
+          queueOwner CHARACTER
+          msgGuid CHARACTER
+          msgParentGuid CHARACTER
+          msgFrom CHARACTER
+          msgTo CHARACTER
+          msgCc CHARACTER
+          msgBcc CHARACTER
+          msgSubject CHARACTER
+          msgDateCreated DATETIME-TZ
+          msgContent BLOB
+          msgContentType CHARACTER
+          msgFlags CHARACTER
+       TABLE: ttAttachment
+          msgGuid CHARACTER
+          url CHARACTER
+          filename CHARACTER
+          size INTEGER
+          mimetype CHARACTER
+       TABLE: ttGetYearIn
+          Company_ID INTEGER
+       TABLE: ttUserInfoTr
+          ttUser CHARACTER
+          ttUserLang CHARACTER
+       TABLE: ttCstMessages
+          ttType CHARACTER
+          ttMessageNumber CHARACTER
+          ttMessage CHARACTER
+       TABLE: ttGetYearOut
+          Year INTEGER
+   -- No customizations; Validation not necessary
+
+** Processing procedure objects ...
+
+** Checking method and parameter names ...
+
+** Generating .NET proxies ...
+   Creating AssemblyInfo.cs ...
+   Creating dsSessionContextSchema.cs ...
+   Creating dsCreateBudgetInSchema.cs ...
+   Creating dsMessageSchema.cs ...
+   Creating dsCreateBudgetOutSchema.cs ...
+   Creating dsGetEntityInSchema.cs ...
+   Creating dsGetEntityOutSchema.cs ...
+   Creating dsGetGlCodeInSchema.cs ...
+   Creating dsGetGlCodeOutSchema.cs ...
+   Creating dsGetPeriodInSchema.cs ...
+   Creating dsGetPeriodOutSchema.cs ...
+   Creating dsGetYearInSchema.cs ...
+   Creating dsGetYearOutSchema.cs ...
+   Creating ProxyService.cs ...
+   Creating strongly typed dataset classes ...
+       C:\Progress\OpenEdge\bin\PathFinder /csc 
+       C:\Windows\Microsoft.NET\Framework\v4.0.30319\csc /t:exe /out:C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsSessionContext.exe C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsSessionContextSchema.cs 
+       C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsSessionContext.exe 
+       C:\Progress\OpenEdge\bin\PathFinder /xsd 
+       C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools\xsd /d /n:UgurluPluginGL.Proxy.StrongTypesNS C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsSessionContext.xsd 
+       C:\Progress\OpenEdge\bin\PathFinder /csc 
+       C:\Windows\Microsoft.NET\Framework\v4.0.30319\csc /t:exe /out:C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsCreateBudgetIn.exe C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsCreateBudgetInSchema.cs 
+       C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsCreateBudgetIn.exe 
+       C:\Progress\OpenEdge\bin\PathFinder /xsd 
+       C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools\xsd /d /n:UgurluPluginGL.Proxy.StrongTypesNS C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsCreateBudgetIn.xsd 
+       C:\Progress\OpenEdge\bin\PathFinder /csc 
+       C:\Windows\Microsoft.NET\Framework\v4.0.30319\csc /t:exe /out:C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsMessage.exe C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsMessageSchema.cs 
+       C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsMessage.exe 
+       C:\Progress\OpenEdge\bin\PathFinder /xsd 
+       C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools\xsd /d /n:UgurluPluginGL.Proxy.StrongTypesNS C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsMessage.xsd 
+       C:\Progress\OpenEdge\bin\PathFinder /csc 
+       C:\Windows\Microsoft.NET\Framework\v4.0.30319\csc /t:exe /out:C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsCreateBudgetOut.exe C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsCreateBudgetOutSchema.cs 
+       C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsCreateBudgetOut.exe 
+       C:\Progress\OpenEdge\bin\PathFinder /xsd 
+       C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools\xsd /d /n:UgurluPluginGL.Proxy.StrongTypesNS C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsCreateBudgetOut.xsd 
+       C:\Progress\OpenEdge\bin\PathFinder /csc 
+       C:\Windows\Microsoft.NET\Framework\v4.0.30319\csc /t:exe /out:C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsGetEntityIn.exe C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsGetEntityInSchema.cs 
+       C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsGetEntityIn.exe 
+       C:\Progress\OpenEdge\bin\PathFinder /xsd 
+       C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools\xsd /d /n:UgurluPluginGL.Proxy.StrongTypesNS C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsGetEntityIn.xsd 
+       C:\Progress\OpenEdge\bin\PathFinder /csc 
+       C:\Windows\Microsoft.NET\Framework\v4.0.30319\csc /t:exe /out:C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsGetEntityOut.exe C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsGetEntityOutSchema.cs 
+       C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsGetEntityOut.exe 
+       C:\Progress\OpenEdge\bin\PathFinder /xsd 
+       C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools\xsd /d /n:UgurluPluginGL.Proxy.StrongTypesNS C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsGetEntityOut.xsd 
+       C:\Progress\OpenEdge\bin\PathFinder /csc 
+       C:\Windows\Microsoft.NET\Framework\v4.0.30319\csc /t:exe /out:C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsGetGlCodeIn.exe C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsGetGlCodeInSchema.cs 
+       C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsGetGlCodeIn.exe 
+       C:\Progress\OpenEdge\bin\PathFinder /xsd 
+       C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools\xsd /d /n:UgurluPluginGL.Proxy.StrongTypesNS C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsGetGlCodeIn.xsd 
+       C:\Progress\OpenEdge\bin\PathFinder /csc 
+       C:\Windows\Microsoft.NET\Framework\v4.0.30319\csc /t:exe /out:C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsGetGlCodeOut.exe C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsGetGlCodeOutSchema.cs 
+       C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsGetGlCodeOut.exe 
+       C:\Progress\OpenEdge\bin\PathFinder /xsd 
+       C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools\xsd /d /n:UgurluPluginGL.Proxy.StrongTypesNS C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsGetGlCodeOut.xsd 
+       C:\Progress\OpenEdge\bin\PathFinder /csc 
+       C:\Windows\Microsoft.NET\Framework\v4.0.30319\csc /t:exe /out:C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsGetPeriodIn.exe C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsGetPeriodInSchema.cs 
+       C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsGetPeriodIn.exe 
+       C:\Progress\OpenEdge\bin\PathFinder /xsd 
+       C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools\xsd /d /n:UgurluPluginGL.Proxy.StrongTypesNS C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsGetPeriodIn.xsd 
+       C:\Progress\OpenEdge\bin\PathFinder /csc 
+       C:\Windows\Microsoft.NET\Framework\v4.0.30319\csc /t:exe /out:C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsGetPeriodOut.exe C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsGetPeriodOutSchema.cs 
+       C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsGetPeriodOut.exe 
+       C:\Progress\OpenEdge\bin\PathFinder /xsd 
+       C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools\xsd /d /n:UgurluPluginGL.Proxy.StrongTypesNS C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsGetPeriodOut.xsd 
+       C:\Progress\OpenEdge\bin\PathFinder /csc 
+       C:\Windows\Microsoft.NET\Framework\v4.0.30319\csc /t:exe /out:C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsGetYearIn.exe C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsGetYearInSchema.cs 
+       C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsGetYearIn.exe 
+       C:\Progress\OpenEdge\bin\PathFinder /xsd 
+       C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools\xsd /d /n:UgurluPluginGL.Proxy.StrongTypesNS C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsGetYearIn.xsd 
+       C:\Progress\OpenEdge\bin\PathFinder /csc 
+       C:\Windows\Microsoft.NET\Framework\v4.0.30319\csc /t:exe /out:C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsGetYearOut.exe C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsGetYearOutSchema.cs 
+       C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsGetYearOut.exe 
+       C:\Progress\OpenEdge\bin\PathFinder /xsd 
+       C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools\xsd /d /n:UgurluPluginGL.Proxy.StrongTypesNS C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsGetYearOut.xsd 
+   Compiling .NET proxies and creating .dll ...
+       C:\Progress\OpenEdge\bin\PathFinder /csc 
+       C:\Windows\Microsoft.NET\Framework\v4.0.30319\csc  /t:library "/r:C:\Progress\OpenEdge\dotnet\deploy\strongnamed-signed\Progress.o4glrt.dll" /out:C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\ProxyService.dll C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsSessionContext.cs C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsCreateBudgetIn.cs C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsMessage.cs C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsCreateBudgetOut.cs C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsGetEntityIn.cs C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsGetEntityOut.cs C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsGetGlCodeIn.cs C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsGetGlCodeOut.cs C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsGetPeriodIn.cs C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsGetPeriodOut.cs C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsGetYearIn.cs C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\StrongTypesNS\dsGetYearOut.cs C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\ProxyService.cs C:\Git\QAD\UgurluPluginGL\Server\c files\UgurluPluginGL\Proxy\AssemblyInfo.cs 
+
+** Generation complete

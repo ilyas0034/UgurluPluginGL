@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<WSAD xmlns="urn:schemas-progress-com:WSAD:0011" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AppObject>
+    <PGVersion>
+      <PXGVersion>03</PXGVersion>
+    </PGVersion>
+    <PGGenInfo isSessionFree="true">
+      <Author />
+      <VersionString />
+      <VersionNumber>1</VersionNumber>
+      <Package />
+      <Service>ProxyService</Service>
+      <WorkDir>C:\Git\QAD\UgurluPluginGL\Server\c files\</WorkDir>
+      <VerboseLogging>true</VerboseLogging>
+      <LeaveProxyFiles>true</LeaveProxyFiles>
+      <SaveBeforeGen>true</SaveBeforeGen>
+      <DotNetClient>true</DotNetClient>
+      <JavaClient>false</JavaClient>
+      <WebServicesClient>false</WebServicesClient>
+      <ESBClient>false</ESBClient>
+      <ESBClient2>false</ESBClient2>
+      <SilverlightClient>false</SilverlightClient>
+      <RESTClient>false</RESTClient>
+      <UserDefinedAppService>false</UserDefinedAppService>
+      <JavaCompilerType>1</JavaCompilerType>
+      <JavaCompiler>&lt;Install Dir&gt;\jdk\bin\javac</JavaCompiler>
+      <JavaSwitches />
+      <JavaClasspathSwitch>-classpath</JavaClasspathSwitch>
+      <JavaClasspath>&lt;Proxy Dir&gt;;&lt;Install Dir&gt;\java\progress.jar;&lt;Install Dir&gt;\java\messages.jar;;&lt;Default classes.zip&gt;</JavaClasspath>
+      <DotNetCompilerType>4</DotNetCompilerType>
+      <DotNetCompiler>csc</DotNetCompiler>
+      <DotNetSwitches />
+      <DotNetXSDGenerator>xsd</DotNetXSDGenerator>
+      <DotNetNamespace>UgurluPluginGL.Proxy</DotNetNamespace>
+      <DotNetTitle>UgurluPluginGL.Proxy</DotNetTitle>
+      <DotNetVersion />
+      <DotNetDesc />
+      <DotNetCompany>CSA</DotNetCompany>
+      <DotNetProduct />
+      <DotNetPublicKey />
+      <DotNetDelaySign>false</DotNetDelaySign>
+      <DotNetRuntime>strongnamed signed</DotNetRuntime>
+      <DotNetDataSetNamespace>UgurluPluginGL.Proxy.StrongTypesNS</DotNetDataSetNamespace>
+      <DNUseDefaultDSNamespace>true</DNUseDefaultDSNamespace>
+      <DNUseNamespaceAsDirs>true</DNUseNamespaceAsDirs>
+      <DotNetUseNullableTypes>true</DotNetUseNullableTypes>
+      <SilverlightDomainServiceNamespace>UgurluPluginGL.Proxy.Web.Services</SilverlightDomainServiceNamespace>
+      <SilverlightUseDefaultDomainServiceNamespace>true</SilverlightUseDefaultDomainServiceNamespace>
+      <SilverlightEntityNamespace>UgurluPluginGL.Proxy.Web</SilverlightEntityNamespace>
+      <SilverlightUseDefaultEntityNamespace>true</SilverlightUseDefaultEntityNamespace>
+    </PGGenInfo>
+    <DeploymentWizard>
+      <CurrentEncoding>3</CurrentEncoding>
+      <SoapEndpointURL>http://www.tempuri.org/wsa/wsa1</SoapEndpointURL>
+      <WebServiceNamespace userDefined="true">urn:tempuri-org</WebServiceNamespace>
+      <SoapAction appendToSoapAction="false" />
+      <ConnectReturnString userDefined="false" />
+      <TestWSDL bGen="true" RPCEncoded="false" RPCLiteral="false" DocLiteral="true" />
+      <ESBEncoding>3</ESBEncoding>
+      <EntryEndpoint useDefault="true" />
+      <FaultEndpoint useDefault="true" />
+      <RejectedEndpoint useDefault="true" />
+      <Container />
+      <AppserverURL>AppServerDC://localhost:3091</AppserverURL>
+      <FileName overWrite="false">ProxyService</FileName>
+      <ResourceDirectory>/Resources/OpenEdgeServices</ResourceDirectory>
+      <SonicAppService useFileSystem="false" deployToDS="false" createXAR="false">
+        <ResourceDirectory overWrite="false" />
+        <XARName />
+      </SonicAppService>
+      <SonicConnectionInfo>
+        <SonicURL>tcp://localhost:2506</SonicURL>
+        <SonicDomain>Domain1</SonicDomain>
+        <User>Administrator</User>
+        <Password />
+      </SonicConnectionInfo>
+    </DeploymentWizard>
+    <Name>ProxyService</Name>
+    <ProPath>C:\Git\QAD\UgurluPluginGL\Server\r files\</ProPath>
+    <HelpString />
+    <ODLHelpString />
+    <ObjectType>false</ObjectType>
+    <AllowUnknown>false</AllowUnknown>
+    <IsTTResultSet>true</IsTTResultSet>
+    <WriteDatasetBeforeImage>false</WriteDatasetBeforeImage>
+    <Procedure isPersistent="false" useFullName="false">
+      <Name>createbudget_a</Name>
+      <ProcPath />
+      <ProPath>C:\Git\QAD\UgurluPluginGL\Server\r files\</ProPath>
+    </Procedure>
+    <Procedure isPersistent="false" useFullName="false">
+      <Name>getbudget_a</Name>
+      <ProcPath />
+      <ProPath>C:\Git\QAD\UgurluPluginGL\Server\r files\</ProPath>
+    </Procedure>
+    <Procedure isPersistent="false" useFullName="false">
+      <Name>getentity_a</Name>
+      <ProcPath />
+      <ProPath>C:\Git\QAD\UgurluPluginGL\Server\r files\</ProPath>
+      <ProcExt>p</ProcExt>
+    </Procedure>
+    <Procedure isPersistent="false" useFullName="false">
+      <Name>getglcode_a</Name>
+      <ProcPath />
+      <ProPath>C:\Git\QAD\UgurluPluginGL\Server\r files\</ProPath>
+      <ProcExt>p</ProcExt>
+    </Procedure>
+    <Procedure isPersistent="false" useFullName="false">
+      <Name>getperiod_a</Name>
+      <ProcPath />
+      <ProPath>C:\Git\QAD\UgurluPluginGL\Server\r files\</ProPath>
+      <ProcExt>p</ProcExt>
+    </Procedure>
+    <Procedure isPersistent="false" useFullName="false">
+      <Name>getyear_a</Name>
+      <ProcPath />
+      <ProPath>C:\Git\QAD\UgurluPluginGL\Server\r files\</ProPath>
+    </Procedure>
+  </AppObject>
+</WSAD>

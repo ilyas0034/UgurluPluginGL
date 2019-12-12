@@ -1,0 +1,58 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="dsMessageDataSet" targetNamespace="dsMessageNS" xmlns:mstns="dsMessageNS" xmlns="dsMessageNS" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="dsMessageDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ttMessageQueue">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="queueOid" type="xs:decimal" minOccurs="0" />
+              <xs:element name="queueName" type="xs:string" minOccurs="0" />
+              <xs:element name="queueOwner" type="xs:string" minOccurs="0" />
+              <xs:element name="queueLabel" type="xs:string" minOccurs="0" />
+              <xs:element name="queueDesc" type="xs:string" minOccurs="0" />
+              <xs:element name="userQueue" type="xs:boolean" minOccurs="0" />
+              <xs:element name="deleteQueue" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ttMessage">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="queueName" type="xs:string" minOccurs="0" />
+              <xs:element name="queueOwner" type="xs:string" minOccurs="0" />
+              <xs:element name="msgGuid" type="xs:string" minOccurs="0" />
+              <xs:element name="msgParentGuid" type="xs:string" minOccurs="0" />
+              <xs:element name="msgFrom" type="xs:string" minOccurs="0" />
+              <xs:element name="msgTo" type="xs:string" minOccurs="0" />
+              <xs:element name="msgCc" type="xs:string" minOccurs="0" />
+              <xs:element name="msgBcc" type="xs:string" minOccurs="0" />
+              <xs:element name="msgSubject" type="xs:string" minOccurs="0" />
+              <xs:element name="msgDateCreated" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="msgContent" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="msgContentType" type="xs:string" minOccurs="0" />
+              <xs:element name="msgFlags" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ttAttachment">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="msgGuid" type="xs:string" minOccurs="0" />
+              <xs:element name="url" type="xs:string" minOccurs="0" />
+              <xs:element name="filename" type="xs:string" minOccurs="0" />
+              <xs:element name="size" type="xs:int" minOccurs="0" />
+              <xs:element name="mimetype" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="messageRelation" msdata:parent="ttMessage" msdata:child="ttAttachment" msdata:parentkey="msgGuid" msdata:childkey="msgGuid" />
+      <msdata:Relationship name="queueRelation" msdata:parent="ttMessageQueue" msdata:child="ttMessage" msdata:parentkey="queueName queueOwner" msdata:childkey="queueName queueOwner" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

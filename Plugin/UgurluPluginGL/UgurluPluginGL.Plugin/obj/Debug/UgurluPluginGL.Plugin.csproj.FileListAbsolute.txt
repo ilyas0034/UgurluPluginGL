@@ -1,0 +1,12 @@
+C:\Program Files (x86)\QAD\TeknoTest\plugins\qad.plugin.UgurluPluginGL.Plugin\UgurluPluginGL.Plugin.dll
+C:\Program Files (x86)\QAD\TeknoTest\plugins\qad.plugin.UgurluPluginGL.Plugin\UgurluPluginGL.Plugin.dll.config
+C:\Users\ilyas\source\repos\UgurluPluginGL\UgurluPluginGL.Plugin\obj\Debug\UgurluPluginGL.Plugin.csprojAssemblyReference.cache
+C:\Users\ilyas\source\repos\UgurluPluginGL\UgurluPluginGL.Plugin\obj\Debug\UgurluPluginGL.Plugin.Properties.Resources.resources
+C:\Users\ilyas\source\repos\UgurluPluginGL\UgurluPluginGL.Plugin\obj\Debug\UgurluPluginGL.Plugin.UgurluPluginGLForm.resources
+C:\Users\ilyas\source\repos\UgurluPluginGL\UgurluPluginGL.Plugin\obj\Debug\UgurluPluginGL.Plugin.csproj.GenerateResource.cache
+C:\Users\ilyas\source\repos\UgurluPluginGL\UgurluPluginGL.Plugin\obj\Debug\UgurluPluginGL.Plugin.csproj.CoreCompileInputs.cache
+C:\Users\ilyas\source\repos\UgurluPluginGL\UgurluPluginGL.Plugin\obj\Debug\UgurluPluginGL.Plugin.csproj.CopyComplete
+C:\Users\ilyas\source\repos\UgurluPluginGL\UgurluPluginGL.Plugin\obj\Debug\UgurluPluginGL.Plugin.dll
+C:\Users\ilyas\source\repos\UgurluPluginGL\UgurluPluginGL.Plugin\obj\Debug\UgurluPluginGL.Plugin.pdb
+C:\Program Files (x86)\QAD\TeknoTest\plugins\qad.plugin.UgurluPluginGL.Plugin\UgurluPluginGL.Plugin.pdb
+C:\Program Files (x86)\QAD\TeknoTest\plugins\qad.plugin.UgurluPluginGL.Plugin\plugin-config.xml

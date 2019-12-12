@@ -1,0 +1,9 @@
+C:\Users\ilyas\source\repos\UgurluPluginGL\UgurluPluginGL.Proxy\bin\Debug\UgurluPluginGL.Proxy.dll
+C:\Users\ilyas\source\repos\UgurluPluginGL\UgurluPluginGL.Proxy\bin\Debug\UgurluPluginGL.Proxy.pdb
+C:\Users\ilyas\source\repos\UgurluPluginGL\UgurluPluginGL.Proxy\bin\Debug\Progress.Messages.dll
+C:\Users\ilyas\source\repos\UgurluPluginGL\UgurluPluginGL.Proxy\bin\Debug\Progress.o4glrt.dll
+C:\Users\ilyas\source\repos\UgurluPluginGL\UgurluPluginGL.Proxy\obj\Debug\UgurluPluginGL.Proxy.csproj.CoreCompileInputs.cache
+C:\Users\ilyas\source\repos\UgurluPluginGL\UgurluPluginGL.Proxy\obj\Debug\UgurluPluginGL.Proxy.csproj.CopyComplete
+C:\Users\ilyas\source\repos\UgurluPluginGL\UgurluPluginGL.Proxy\obj\Debug\UgurluPluginGL.Proxy.dll
+C:\Users\ilyas\source\repos\UgurluPluginGL\UgurluPluginGL.Proxy\obj\Debug\UgurluPluginGL.Proxy.pdb
+C:\Users\ilyas\source\repos\UgurluPluginGL\UgurluPluginGL.Proxy\obj\Debug\UgurluPluginGL.Proxy.csprojAssemblyReference.cache

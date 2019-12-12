@@ -1,0 +1,30 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="dsCreateBudgetOutDataSet" targetNamespace="dsCreateBudgetOutNS" xmlns:mstns="dsCreateBudgetOutNS" xmlns="dsCreateBudgetOutNS" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="dsCreateBudgetOutDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ttCstMessages">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ttType" type="xs:string" minOccurs="0" />
+              <xs:element name="ttMessageNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="ttMessage" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ttCreateBudgetOut">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" type="xs:string" minOccurs="0" />
+              <xs:element name="Period" type="xs:int" minOccurs="0" />
+              <xs:element name="GLCode" type="xs:string" minOccurs="0" />
+              <xs:element name="Amount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CompanyCode" type="xs:string" minOccurs="0" />
+              <xs:element name="Year" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

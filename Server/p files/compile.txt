@@ -1,0 +1,19 @@
+propath = propath + ",/apl/ee2016_test/customizations/pro/".
+propath = propath + ",/apl/ee2016_test/customizations/mfg/default/src/".
+
+compile /apl/ee2016_test/customizations/pro/com/qad/plugingl/createbudget.p   save into /apl/ee2016_test/dist/pro/com/qad/plugingl.
+compile /apl/ee2016_test/customizations/pro/com/qad/plugingl/createbudget_a.p save into /apl/ee2016_test/dist/pro/com/qad/plugingl.
+
+compile /apl/ee2016_test/customizations/pro/com/qad/plugingl/getbudget.p   save into /apl/ee2016_test/dist/pro/com/qad/plugingl.
+compile /apl/ee2016_test/customizations/pro/com/qad/plugingl/getbudget_a.p save into /apl/ee2016_test/dist/pro/com/qad/plugingl.
+
+compile /apl/ee2016_test/customizations/pro/com/qad/plugingl/getyear.p   save into /apl/ee2016_test/dist/pro/com/qad/plugingl.
+compile /apl/ee2016_test/customizations/pro/com/qad/plugingl/getyear_a.p save into /apl/ee2016_test/dist/pro/com/qad/plugingl.
+compile /apl/ee2016_test/customizations/pro/com/qad/plugingl/getperiod.p   save into /apl/ee2016_test/dist/pro/com/qad/plugingl.
+compile /apl/ee2016_test/customizations/pro/com/qad/plugingl/getperiod_a.p save into /apl/ee2016_test/dist/pro/com/qad/plugingl.
+
+compile /apl/ee2016_test/customizations/pro/com/qad/plugingl/getglcode.p   save into /apl/ee2016_test/dist/pro/com/qad/plugingl.
+compile /apl/ee2016_test/customizations/pro/com/qad/plugingl/getglcode_a.p save into /apl/ee2016_test/dist/pro/com/qad/plugingl.
+
+compile /apl/ee2016_test/customizations/pro/com/qad/plugingl/getentity.p   save into /apl/ee2016_test/dist/pro/com/qad/plugingl.
+compile /apl/ee2016_test/customizations/pro/com/qad/plugingl/getentity_a.p save into /apl/ee2016_test/dist/pro/com/qad/plugingl.

@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{34DB1164-B4EE-4317-8D0E-04A8E58CCF14}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UgurluPluginGL.BL</RootNamespace>
+    <AssemblyName>UgurluPluginGL.BL</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>glacc.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Progress.Messages, Version=11.7.0.1388, Culture=neutral, PublicKeyToken=1a0c0a15bd34807c, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressNugetPack.11.7.0\lib\Progress.Messages.dll</HintPath>
+    </Reference>
+    <Reference Include="Progress.o4glrt, Version=11.7.0.1388, Culture=neutral, PublicKeyToken=1a0c0a15bd34807c, processorArchitecture=MSIL">
+      <HintPath>..\packages\ProgressNugetPack.11.7.0\lib\Progress.o4glrt.dll</HintPath>
+    </Reference>
+    <Reference Include="QAD.Common, Version=3.2.0.62, Culture=neutral, PublicKeyToken=65438e8b916ed64a, processorArchitecture=MSIL">
+      <HintPath>..\packages\QadEEPluginNugetPack.3.2.0.62\lib\QAD.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="QAD.PluginFoundation, Version=3.2.0.62, Culture=neutral, PublicKeyToken=65438e8b916ed64a, processorArchitecture=MSIL">
+      <HintPath>..\packages\QadEEPluginNugetPack.3.2.0.62\lib\QAD.PluginFoundation.dll</HintPath>
+    </Reference>
+    <Reference Include="QAD.Services, Version=3.2.0.62, Culture=neutral, PublicKeyToken=e5ebd3fad5729862, processorArchitecture=MSIL">
+      <HintPath>..\packages\QadEEPluginNugetPack.3.2.0.62\lib\QAD.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="QAD.Shared, Version=3.2.0.62, Culture=neutral, PublicKeyToken=58366f6bf7bf40ce, processorArchitecture=MSIL">
+      <HintPath>..\packages\QadEEPluginNugetPack.3.2.0.62\lib\QAD.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="QAD.Shell.Plugins, Version=3.2.0.62, Culture=neutral, PublicKeyToken=e5ebd3fad5729862, processorArchitecture=MSIL">
+      <HintPath>..\packages\QadEEPluginNugetPack.3.2.0.62\lib\QAD.Shell.Plugins.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\BudgetModel.cs" />
+    <Compile Include="Common\ComboBoxDisplayModel.cs" />
+    <Compile Include="Common\EntityLookupModel.cs" />
+    <Compile Include="Common\GLAccountLookupModel.cs" />
+    <Compile Include="Common\PeriodLookupModel.cs" />
+    <Compile Include="Common\ProccessException.cs" />
+    <Compile Include="Common\ResultModel.cs" />
+    <Compile Include="Common\YearLookupModel.cs" />
+    <Compile Include="PluginManager\IPluginManager.cs" />
+    <Compile Include="PluginManager\IPluginRepository.cs" />
+    <Compile Include="PluginManager\PluginManager.cs" />
+    <Compile Include="PluginManager\PluginRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UgurluPluginGL.Proxy\UgurluPluginGL.Proxy.csproj">
+      <Project>{F351FA4A-0672-4875-A38D-5F35B71C7DED}</Project>
+      <Name>UgurluPluginGL.Proxy</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="glacc.snk" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
